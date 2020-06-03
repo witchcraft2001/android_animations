@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_refresh"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:src="@drawable/ic_refresh"
+        android:tint="#808080"
+        app:layout_constraintBottom_toBottomOf="@+id/img_book"
+        app:layout_constraintEnd_toEndOf="@+id/img_book"
+        app:layout_constraintStart_toStartOf="@+id/img_book"
+        app:layout_constraintTop_toTopOf="@+id/img_book" />
+
+    <ImageView
+        android:id="@+id/img_book"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_study"
+        android:layout_marginTop="64dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_circle"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:src="@drawable/ic_circle"
+        android:tint="#808080"
+        app:layout_constraintBottom_toBottomOf="@+id/img_book1"
+        app:layout_constraintEnd_toEndOf="@+id/img_book1"
+        app:layout_constraintStart_toStartOf="@+id/img_book1"
+        app:layout_constraintTop_toTopOf="@+id/img_book1" />
+
+    <ImageView
+        android:id="@+id/img_book1"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_study"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_book" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
